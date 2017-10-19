@@ -30,9 +30,9 @@ void loop() {
     int r = Serial.parseInt();
     if(r == 12 || r == 13){
        if(r==12)
-        alternarLed(r,&vermelhoAceso);
-       else
         alternarLed(r,&verdeAceso);
+       else
+        alternarLed(r,&vermelhoAceso);
         
     }else{
       Serial.println("entrada invalida");
